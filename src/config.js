@@ -3,10 +3,7 @@ export const config = {
   githubConvertedToken:
     "Z2hwX2did056cmFHTEthSFFMSDBXbHZzOHM5MmQ5dHE0eTBkSGsxRQ==",
 
-  // Your Github UserName
   githubUserName: "lambda-forum",
-
-  // Your Github Repo Name Where You Have your issues as Blog
   githubRepo: "lambda-forum",
 
   // Set it to true if you have a Github app to add to this project
@@ -15,10 +12,8 @@ export const config = {
   OAuthClientID: "Iv1.aa33500a7908669b",
   OAuthSecret: "8e2d3524a81ba511439c8c1551671cfab373af01",
 
-  // Your Personal Blog Title
   title: "λ",
 
-  // Your Personal Blog Subtitle
   subtitle: "Developer",
 
   // Header customization

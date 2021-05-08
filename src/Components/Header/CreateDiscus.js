@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { config } from "../../config";
 
-const { enableOAuth, OAuthClientID } = config;
+const { enableOAuth } = config;
 
 const ButtonContainer = styled.div`
   display: ${enableOAuth ? "block" : "none"};
@@ -38,19 +38,19 @@ const Text = styled.span`
   font-size: 18px;
 `;
 
-export const GithubLogin = ({ isAbsolute }) => {
+export const CreateDiscus = ({ isAbsolute }) => {
   const isLoggedIn = localStorage.getItem("githubToken") || false;
 
-  const callOAuth = async () => {
+  const createDiscus = async () => {
     window.location.href =
-      "https://github.com/login/oauth/authorize?client_id=" + OAuthClientID;
+      "https://github.com/lambda-forum/lambda-forum.github.io/issues/new";
   };
 
   return (
     <ButtonContainer absolute={isAbsolute}>
       {!isLoggedIn ? (
-        <Button onClick={callOAuth}>
-          <FontAwesomeIcon icon={faGithub} /> Log in
+        <Button onClick={createDiscus}>
+          <FontAwesomeIcon icon={faGithub} />  创建帖子
         </Button>
       ) : (
         <Text>Logged in as {localStorage.getItem("githubUsername")}</Text>
