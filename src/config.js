@@ -14,7 +14,7 @@ export const config = {
 
   title: "λ",
 
-  subtitle: "Developer",
+  subtitle: "Forum",
 
   // Header customization
   header: {
